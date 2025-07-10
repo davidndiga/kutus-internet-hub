@@ -1,178 +1,77 @@
-
 import { useState } from 'react';
-import { 
-  CheckCircle, 
-  MapPin, 
-  Wifi, 
-  Clock, 
-  Users,
-  ArrowLeft,
-  Phone,
-  Smartphone
-} from 'lucide-react';
+import { CheckCircle, MapPin, Wifi, Clock, Users, ArrowLeft, Phone, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
-
 const HotspotPackages = () => {
   const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
-
-  const packages = [
-    {
-      id: 'hourly-1',
-      name: '1 Hour Pass',
-      price: 'Ksh 10',
-      duration: '1 Hour',
-      popular: false,
-      features: [
-        '1 hour unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 1 device',
-        'All hotspot locations',
-        'Basic support'
-      ]
-    },
-    {
-      id: 'hourly-3',
-      name: '3 Hours Pass',
-      price: 'Ksh 20',
-      duration: '3 Hours',
-      popular: false,
-      features: [
-        '3 hours unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 2 devices',
-        'All hotspot locations',
-        'Basic support'
-      ]
-    },
-    {
-      id: 'hourly-6',
-      name: '6 Hours Pass',
-      price: 'Ksh 30',
-      duration: '6 Hours',
-      popular: false,
-      features: [
-        '6 hours unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 2 devices',
-        'All hotspot locations',
-        'Basic support'
-      ]
-    },
-    {
-      id: 'hourly-12',
-      name: '12 Hours Pass',
-      price: 'Ksh 40',
-      duration: '12 Hours',
-      popular: false,
-      features: [
-        '12 hours unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 2 devices',
-        'All hotspot locations',
-        'Priority support'
-      ]
-    },
-    {
-      id: 'daily',
-      name: 'Daily Pass',
-      price: 'Ksh 50',
-      duration: '24 Hours',
-      popular: true,
-      features: [
-        '24 hours unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 3 devices',
-        'All hotspot locations',
-        'Priority support'
-      ]
-    },
-    {
-      id: 'weekly',
-      name: 'Weekly Pass',
-      price: 'Ksh 250',
-      duration: '7 Days',
-      popular: false,
-      features: [
-        '7 days unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 3 devices',
-        'All hotspot locations',
-        'Priority support',
-        '50% savings vs daily'
-      ]
-    },
-    {
-      id: 'bi-weekly',
-      name: '2 Weeks Pass',
-      price: 'Ksh 400',
-      duration: '14 Days',
-      popular: false,
-      features: [
-        '14 days unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 4 devices',
-        'All hotspot locations',
-        'Priority support',
-        'Mobile app access'
-      ]
-    },
-    {
-      id: 'monthly',
-      name: 'Monthly Pass',
-      price: 'Ksh 750',
-      duration: '30 Days',
-      popular: false,
-      features: [
-        '30 days unlimited access',
-        'Up to 7 Mbps speed',
-        'Connect 5 devices',
-        'All hotspot locations',
-        'Priority support',
-        'Mobile app access',
-        '50% savings vs daily'
-      ]
-    },
-    {
-      id: 'student',
-      name: 'Student Package',
-      price: 'Ksh 1,500',
-      duration: '30 Days',
-      popular: false,
-      features: [
-        '30 days unlimited access',
-        'Up to 10 Mbps speed',
-        'Connect 3 devices',
-        'All hotspot locations',
-        'Priority support',
-        'Educational content priority',
-        'Student ID required'
-      ]
-    }
-  ];
-
-  const hotspotLocations = [
-    'Metro Place Shopping Center',
-    'Kutus Market Square',
-    'Kirinyaga University',
-    'Kutus Bus Station',
-    'County Government Offices',
-    'Kirinyaga Teaching & Referral Hospital',
-    'Wang\'uru Market',
-    'Sagana Town Center',
-    'Karatina University Campus',
-    'Kerugoya Town',
-    'Kianyaga Shopping Center',
-    'Baricho Market',
-    'Kimbimbi Shopping Center',
-    'Kagio Market',
-    'Kiamaciri Shopping Center'
-  ];
-
-  return (
-    <div className="min-h-screen bg-gray-50">
+  const packages = [{
+    id: 'hourly-1',
+    name: '1 Hour Pass',
+    price: 'Ksh 10',
+    duration: '1 Hour',
+    popular: false,
+    features: ['1 hour unlimited access', 'Up to 7 Mbps speed', 'Connect 1 device', 'All hotspot locations', 'Basic support']
+  }, {
+    id: 'hourly-3',
+    name: '3 Hours Pass',
+    price: 'Ksh 20',
+    duration: '3 Hours',
+    popular: false,
+    features: ['3 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 2 devices', 'All hotspot locations', 'Basic support']
+  }, {
+    id: 'hourly-6',
+    name: '6 Hours Pass',
+    price: 'Ksh 30',
+    duration: '6 Hours',
+    popular: false,
+    features: ['6 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 2 devices', 'All hotspot locations', 'Basic support']
+  }, {
+    id: 'hourly-12',
+    name: '12 Hours Pass',
+    price: 'Ksh 40',
+    duration: '12 Hours',
+    popular: false,
+    features: ['12 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 2 devices', 'All hotspot locations', 'Priority support']
+  }, {
+    id: 'daily',
+    name: 'Daily Pass',
+    price: 'Ksh 50',
+    duration: '24 Hours',
+    popular: true,
+    features: ['24 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 3 devices', 'All hotspot locations', 'Priority support']
+  }, {
+    id: 'weekly',
+    name: 'Weekly Pass',
+    price: 'Ksh 250',
+    duration: '7 Days',
+    popular: false,
+    features: ['7 days unlimited access', 'Up to 7 Mbps speed', 'Connect 3 devices', 'All hotspot locations', 'Priority support', '50% savings vs daily']
+  }, {
+    id: 'bi-weekly',
+    name: '2 Weeks Pass',
+    price: 'Ksh 400',
+    duration: '14 Days',
+    popular: false,
+    features: ['14 days unlimited access', 'Up to 7 Mbps speed', 'Connect 4 devices', 'All hotspot locations', 'Priority support', 'Mobile app access']
+  }, {
+    id: 'monthly',
+    name: 'Monthly Pass',
+    price: 'Ksh 750',
+    duration: '30 Days',
+    popular: false,
+    features: ['30 days unlimited access', 'Up to 7 Mbps speed', 'Connect 5 devices', 'All hotspot locations', 'Priority support', 'Mobile app access', '50% savings vs daily']
+  }, {
+    id: 'student',
+    name: 'Student Package',
+    price: 'Ksh 1,500',
+    duration: '30 Days',
+    popular: false,
+    features: ['30 days unlimited access', 'Up to 10 Mbps speed', 'Connect 3 devices', 'All hotspot locations', 'Priority support', 'Educational content priority', 'Student ID required']
+  }];
+  const hotspotLocations = ['Metro Place Shopping Center', 'Kutus Market Square', 'Kirinyaga University', 'Kutus Bus Station', 'County Government Offices', 'Kirinyaga Teaching & Referral Hospital', 'Wang\'uru Market', 'Sagana Town Center', 'Karatina University Campus', 'Kerugoya Town', 'Kianyaga Shopping Center', 'Baricho Market', 'Kimbimbi Shopping Center', 'Kagio Market', 'Kiamaciri Shopping Center'];
+  return <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,7 +103,7 @@ const HotspotPackages = () => {
             Stay connected on the go with our extensive network of hotspots across Kutus 
             and Kirinyaga County. Perfect for students, travelers, and mobile professionals.
           </p>
-          <div className="text-sm text-white/80">
+          <div className="text-sm text-white/90 bg-inherit">
             <span className="font-semibold">15+ Locations</span> across Kirinyaga County
           </div>
         </div>
@@ -219,19 +118,10 @@ const HotspotPackages = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            {packages.map((pkg) => (
-              <Card 
-                key={pkg.id} 
-                className={`hover-scale cursor-pointer relative ${
-                  pkg.popular ? 'border-2 border-orange-500 shadow-lg' : ''
-                } ${selectedPackage === pkg.id ? 'ring-2 ring-orange-500' : ''}`}
-                onClick={() => setSelectedPackage(pkg.id)}
-              >
-                {pkg.popular && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full">
+            {packages.map(pkg => <Card key={pkg.id} className={`hover-scale cursor-pointer relative ${pkg.popular ? 'border-2 border-orange-500 shadow-lg' : ''} ${selectedPackage === pkg.id ? 'ring-2 ring-orange-500' : ''}`} onClick={() => setSelectedPackage(pkg.id)}>
+                {pkg.popular && <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full">
                     POPULAR
-                  </Badge>
-                )}
+                  </Badge>}
                 <CardHeader className="text-center pb-4">
                   <CardTitle className="text-xl">{pkg.name}</CardTitle>
                   <div className="text-lg font-semibold text-orange-600">{pkg.duration}</div>
@@ -241,19 +131,16 @@ const HotspotPackages = () => {
                     <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
                   </div>
                   <ul className="space-y-3 mb-8 text-left">
-                    {pkg.features.map((feature, index) => (
-                      <li key={index} className="flex items-start">
+                    {pkg.features.map((feature, index) => <li key={index} className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                         <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-full">
+                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-full font-extrabold text-lg">
                     Buy Now
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -267,12 +154,10 @@ const HotspotPackages = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {hotspotLocations.map((location, index) => (
-              <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg">
+            {hotspotLocations.map((location, index) => <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg">
                 <MapPin className="w-5 h-5 text-orange-600 mr-3 flex-shrink-0" />
                 <span className="text-gray-800">{location}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -330,16 +215,10 @@ const HotspotPackages = () => {
 
       {/* Floating WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <Button 
-          size="lg" 
-          className="bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 shadow-lg"
-          onClick={() => window.open('https://wa.me/254751507479', '_blank')}
-        >
+        <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 shadow-lg" onClick={() => window.open('https://wa.me/254751507479', '_blank')}>
           <Phone className="w-6 h-6" />
         </Button>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HotspotPackages;
