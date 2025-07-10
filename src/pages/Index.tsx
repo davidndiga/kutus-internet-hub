@@ -16,11 +16,15 @@ import {
   Building,
   Signal,
   Menu,
-  X
+  X,
+  Instagram,
+  Facebook,
+  Youtube
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,6 +62,7 @@ const Index = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors">Home</button>
+                <Link to="/hotspot-packages" className="text-gray-700 hover:text-blue-600 transition-colors">Hotspots</Link>
                 <button onClick={() => scrollToSection('packages')} className="text-gray-700 hover:text-blue-600 transition-colors">Packages</button>
                 <button onClick={() => scrollToSection('features')} className="text-gray-700 hover:text-blue-600 transition-colors">Features</button>
                 <button onClick={() => scrollToSection('team')} className="text-gray-700 hover:text-blue-600 transition-colors">Team</button>
@@ -90,6 +95,7 @@ const Index = () => {
           <div className="md:hidden bg-white border-t">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button onClick={() => scrollToSection('home')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</button>
+              <Link to="/hotspot-packages" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Hotspots</Link>
               <button onClick={() => scrollToSection('packages')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Packages</button>
               <button onClick={() => scrollToSection('features')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Features</button>
               <button onClick={() => scrollToSection('team')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Team</button>
@@ -197,9 +203,11 @@ const Index = () => {
                     <span>24/7 customer support</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-full">
-                  Get Started
-                </Button>
+                <Link to="/hotspot-packages">
+                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-full">
+                    View Plans
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -245,9 +253,11 @@ const Index = () => {
                     <span>Priority customer support</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-full">
-                  Get Started
-                </Button>
+                <Link to="/home-packages">
+                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white rounded-full">
+                    View Plans
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -395,7 +405,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Meet the Team</h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+              Our dedicated team of professionals committed to delivering exceptional internet services to the Kutus community.
             </p>
           </div>
 
@@ -408,11 +418,9 @@ const Index = () => {
                 <h3 className="text-2xl font-bold text-white mb-2">KENNEDY WAHOGO</h3>
                 <p className="text-orange-400 font-semibold mb-4">C.E.O KENTCORP</p>
                 <p className="text-white/80 mb-6">
-                  What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing 
-                  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
-                  1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen 
-                  book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
-                  essentially unchanged.
+                  Visionary leader with over 10 years of experience in telecommunications. Kennedy founded KentCorp 
+                  with the mission to bridge the digital divide in rural Kenya, bringing affordable and reliable 
+                  internet connectivity to underserved communities in Kirinyaga County.
                 </p>
                 <Button className="bg-orange-600 hover:bg-orange-700 text-white rounded-full">
                   Learn More
@@ -421,20 +429,18 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-orange-400 to-yellow-400 flex-shrink-0 border-4 border-orange-500 flex items-center justify-center">
+              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 flex-shrink-0 border-4 border-blue-500 flex items-center justify-center">
                 <Users className="w-24 h-24 text-white" />
               </div>
               <div className="text-center md:text-right">
                 <h3 className="text-2xl font-bold text-white mb-2">DAVID NDIGA</h3>
-                <p className="text-orange-400 font-semibold mb-4">I.C.T KENTCORP</p>
+                <p className="text-blue-400 font-semibold mb-4">I.C.T MANAGER KENTCORP</p>
                 <p className="text-white/80 mb-6">
-                  What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing 
-                  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
-                  1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen 
-                  book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
-                  essentially unchanged.
+                  Expert network engineer and IT specialist responsible for maintaining our robust infrastructure. 
+                  David ensures 99.9% uptime across all our services and leads our technical team in delivering 
+                  cutting-edge internet solutions to our customers.
                 </p>
-                <Button className="bg-orange-600 hover:bg-orange-700 text-white rounded-full">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full">
                   Learn More
                 </Button>
               </div>
@@ -543,22 +549,44 @@ const Index = () => {
                       <MapPin className="w-6 h-6 text-orange-600 mr-4" />
                       <div>
                         <p className="font-medium">Office Location</p>
-                        <p className="text-gray-600">Kutus, Kirinyaga County, Kenya</p>
+                        <p className="text-gray-600">Metro Place, Kutus, Kirinyaga County, Kenya</p>
                       </div>
                     </div>
                     <div className="flex items-center">
                       <Phone className="w-6 h-6 text-orange-600 mr-4" />
                       <div>
                         <p className="font-medium">Phone</p>
-                        <p className="text-gray-600">+254 XXX XXX XXX</p>
+                        <p className="text-gray-600">0751507479</p>
                       </div>
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-6 h-6 text-orange-600 mr-4" />
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-gray-600">info@kentcorp.co.ke</p>
+                        <p className="text-gray-600">info@kentcorpfibrenet.ac.ke</p>
                       </div>
+                    </div>
+                  </div>
+
+                  {/* Social Media Links */}
+                  <div className="mt-8">
+                    <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div className="flex space-x-4">
+                      <a href="#" className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center hover:bg-orange-200 transition-colors">
+                        <Facebook className="w-5 h-5 text-orange-600" />
+                      </a>
+                      <a href="#" className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center hover:bg-orange-200 transition-colors">
+                        <Instagram className="w-5 h-5 text-orange-600" />
+                      </a>
+                      <a href="#" className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center hover:bg-orange-200 transition-colors">
+                        <Youtube className="w-5 h-5 text-orange-600" />
+                      </a>
+                      <a href="#" className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center hover:bg-orange-200 transition-colors">
+                        <div className="text-orange-600 font-bold text-xs">TT</div>
+                      </a>
+                      <a href="#" className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center hover:bg-orange-200 transition-colors">
+                        <div className="text-orange-600 font-bold text-xs">YS</div>
+                      </a>
                     </div>
                   </div>
                 </CardContent>
@@ -566,13 +594,18 @@ const Index = () => {
 
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-4">Coverage Map</h3>
-                  <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="w-12 h-12 text-orange-600 mx-auto mb-2" />
-                      <p className="text-gray-600">Interactive Coverage Map</p>
-                      <p className="text-sm text-gray-500">Kutus & Surrounding Areas</p>
-                    </div>
+                  <h3 className="text-xl font-semibold mb-4">Our Location</h3>
+                  <div className="bg-gray-200 h-64 rounded-lg overflow-hidden">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.234567890!2d37.4579!3d-0.5234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1234567890ab%3A0x1234567890abcdef!2sMetro%20Place%2C%20Kutus%2C%20Kenya!5e0!3m2!1sen!2ske!4v1234567890"
+                      width="100%" 
+                      height="100%" 
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="KentCorp Office Location"
+                    ></iframe>
                   </div>
                 </CardContent>
               </Card>
@@ -594,7 +627,8 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-white/80">
-                <li><button onClick={() => scrollToSection('packages')} className="hover:text-white">Packages</button></li>
+                <li><Link to="/home-packages" className="hover:text-white">Home Internet</Link></li>
+                <li><Link to="/hotspot-packages" className="hover:text-white">Hotspot Wi-Fi</Link></li>
                 <li><button onClick={() => scrollToSection('features')} className="hover:text-white">Features</button></li>
                 <li><button onClick={() => scrollToSection('team')} className="hover:text-white">Team</button></li>
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-white">Contact</button></li>
@@ -612,14 +646,15 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-white/80">
-                <li>Kutus, Kirinyaga County</li>
-                <li>+254 XXX XXX XXX</li>
-                <li>info@kentcorp.co.ke</li>
+                <li>Metro Place, Kutus</li>
+                <li>Kirinyaga County</li>
+                <li>0751507479</li>
+                <li>info@kentcorpfibrenet.ac.ke</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>&copy; 2024 KentCorp. All rights reserved.</p>
+            <p>&copy; 2025 KentCorp / Dave's Digital Oasis</p>
           </div>
         </div>
       </footer>
@@ -629,7 +664,7 @@ const Index = () => {
         <Button 
           size="lg" 
           className="bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 shadow-lg"
-          onClick={() => window.open('https://wa.me/254XXXXXXXXX', '_blank')}
+          onClick={() => window.open('https://wa.me/254751507479', '_blank')}
         >
           <Phone className="w-6 h-6" />
         </Button>
