@@ -20,17 +20,73 @@ const HotspotPackages = () => {
 
   const packages = [
     {
+      id: 'hourly-1',
+      name: '1 Hour Pass',
+      price: 'Ksh 10',
+      duration: '1 Hour',
+      popular: false,
+      features: [
+        '1 hour unlimited access',
+        'Up to 7 Mbps speed',
+        'Connect 1 device',
+        'All hotspot locations',
+        'Basic support'
+      ]
+    },
+    {
+      id: 'hourly-3',
+      name: '3 Hours Pass',
+      price: 'Ksh 20',
+      duration: '3 Hours',
+      popular: false,
+      features: [
+        '3 hours unlimited access',
+        'Up to 7 Mbps speed',
+        'Connect 2 devices',
+        'All hotspot locations',
+        'Basic support'
+      ]
+    },
+    {
+      id: 'hourly-6',
+      name: '6 Hours Pass',
+      price: 'Ksh 30',
+      duration: '6 Hours',
+      popular: false,
+      features: [
+        '6 hours unlimited access',
+        'Up to 7 Mbps speed',
+        'Connect 2 devices',
+        'All hotspot locations',
+        'Basic support'
+      ]
+    },
+    {
+      id: 'hourly-12',
+      name: '12 Hours Pass',
+      price: 'Ksh 40',
+      duration: '12 Hours',
+      popular: false,
+      features: [
+        '12 hours unlimited access',
+        'Up to 7 Mbps speed',
+        'Connect 2 devices',
+        'All hotspot locations',
+        'Priority support'
+      ]
+    },
+    {
       id: 'daily',
       name: 'Daily Pass',
       price: 'Ksh 50',
       duration: '24 Hours',
-      popular: false,
+      popular: true,
       features: [
         '24 hours unlimited access',
-        'Up to 5 Mbps speed',
-        'Connect 2 devices',
+        'Up to 7 Mbps speed',
+        'Connect 3 devices',
         'All hotspot locations',
-        'Basic support'
+        'Priority support'
       ]
     },
     {
@@ -38,14 +94,29 @@ const HotspotPackages = () => {
       name: 'Weekly Pass',
       price: 'Ksh 250',
       duration: '7 Days',
-      popular: true,
+      popular: false,
       features: [
         '7 days unlimited access',
-        'Up to 8 Mbps speed',
+        'Up to 7 Mbps speed',
         'Connect 3 devices',
         'All hotspot locations',
         'Priority support',
-        '20% savings vs daily'
+        '50% savings vs daily'
+      ]
+    },
+    {
+      id: 'bi-weekly',
+      name: '2 Weeks Pass',
+      price: 'Ksh 400',
+      duration: '14 Days',
+      popular: false,
+      features: [
+        '14 days unlimited access',
+        'Up to 7 Mbps speed',
+        'Connect 4 devices',
+        'All hotspot locations',
+        'Priority support',
+        'Mobile app access'
       ]
     },
     {
@@ -56,12 +127,28 @@ const HotspotPackages = () => {
       popular: false,
       features: [
         '30 days unlimited access',
-        'Up to 10 Mbps speed',
+        'Up to 7 Mbps speed',
         'Connect 5 devices',
         'All hotspot locations',
         'Priority support',
         'Mobile app access',
         '50% savings vs daily'
+      ]
+    },
+    {
+      id: 'student',
+      name: 'Student Package',
+      price: 'Ksh 1,500',
+      duration: '30 Days',
+      popular: false,
+      features: [
+        '30 days unlimited access',
+        'Up to 10 Mbps speed',
+        'Connect 3 devices',
+        'All hotspot locations',
+        'Priority support',
+        'Educational content priority',
+        'Student ID required'
       ]
     }
   ];
@@ -125,13 +212,13 @@ const HotspotPackages = () => {
 
       {/* Packages Grid */}
       <section className="py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Choose Your Hotspot Plan</h2>
             <p className="text-lg text-gray-600">Flexible plans to suit your mobile internet needs</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
             {packages.map((pkg) => (
               <Card 
                 key={pkg.id} 

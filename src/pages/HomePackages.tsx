@@ -21,7 +21,7 @@ const HomePackages = () => {
   const packages = [
     {
       id: 'starter',
-      name: 'Home Starter',
+      name: 'Home Wi-Fi',
       price: 'Ksh 1,000',
       speed: '5 Mbps',
       popular: false,
@@ -36,12 +36,12 @@ const HomePackages = () => {
     },
     {
       id: 'standard',
-      name: 'Home Standard',
+      name: 'Home Wi-Fi',
       price: 'Ksh 1,500',
-      speed: '10 Mbps',
+      speed: '8 Mbps',
       popular: true,
       features: [
-        '10 Mbps download speed',
+        '8 Mbps download speed',
         'Unlimited data usage',
         'Connect up to 10 devices',
         'Free router & installation',
@@ -52,12 +52,12 @@ const HomePackages = () => {
     },
     {
       id: 'premium',
-      name: 'Home Premium',
-      price: 'Ksh 2,500',
-      speed: '20 Mbps',
+      name: 'Home Wi-Fi',
+      price: 'Ksh 2,000',
+      speed: '10 Mbps',
       popular: false,
       features: [
-        '20 Mbps download speed',
+        '10 Mbps download speed',
         'Unlimited data usage',
         'Connect unlimited devices',
         'Free premium router & installation',
@@ -68,9 +68,87 @@ const HomePackages = () => {
       ]
     },
     {
-      id: 'ultra',
-      name: 'Home Ultra',
+      id: 'professional',
+      name: 'Home Wi-Fi',
+      price: 'Ksh 3,000',
+      speed: '15 Mbps',
+      popular: false,
+      features: [
+        '15 Mbps download speed',
+        'Unlimited data usage',
+        'Connect unlimited devices',
+        'Free premium router & installation',
+        'Priority customer support',
+        'Enterprise-grade security',
+        'Free streaming services bundle',
+        'Static IP address',
+        '99.9% uptime guarantee'
+      ]
+    },
+    {
+      id: 'business',
+      name: 'Home Wi-Fi',
       price: 'Ksh 4,000',
+      speed: '20 Mbps',
+      popular: false,
+      features: [
+        '20 Mbps download speed',
+        'Unlimited data usage',
+        'Connect unlimited devices',
+        'Free premium router & installation',
+        'Dedicated customer support',
+        'Enterprise-grade security',
+        'Free streaming services bundle',
+        'Static IP address',
+        '99.9% uptime guarantee',
+        'Priority bandwidth allocation'
+      ]
+    },
+    {
+      id: 'enterprise',
+      name: 'Home Wi-Fi',
+      price: 'Ksh 4,500',
+      speed: '25 Mbps',
+      popular: false,
+      features: [
+        '25 Mbps download speed',
+        'Unlimited data usage',
+        'Connect unlimited devices',
+        'Free premium router & installation',
+        'Dedicated customer support',
+        'Enterprise-grade security',
+        'Free streaming services bundle',
+        'Static IP address',
+        '99.9% uptime guarantee',
+        'Priority bandwidth allocation',
+        'Dedicated technical support'
+      ]
+    },
+    {
+      id: 'ultra',
+      name: 'Home Wi-Fi',
+      price: 'Ksh 5,000',
+      speed: '30 Mbps',
+      popular: false,
+      features: [
+        '30 Mbps download speed',
+        'Unlimited data usage',
+        'Connect unlimited devices',
+        'Free premium router & installation',
+        'Dedicated customer support',
+        'Enterprise-grade security',
+        'Free streaming services bundle',
+        'Static IP address',
+        '99.9% uptime guarantee',
+        'Priority bandwidth allocation',
+        'Dedicated technical support',
+        'Advanced QoS settings'
+      ]
+    },
+    {
+      id: 'max',
+      name: 'Home Wi-Fi',
+      price: 'Ksh 6,000',
       speed: '40 Mbps',
       popular: false,
       features: [
@@ -82,7 +160,11 @@ const HomePackages = () => {
         'Enterprise-grade security',
         'Free streaming services bundle',
         'Static IP address',
-        '99.9% uptime guarantee'
+        '99.9% uptime guarantee',
+        'Priority bandwidth allocation',
+        'Dedicated technical support',
+        'Advanced QoS settings',
+        'Fiber optic connection'
       ]
     }
   ];
