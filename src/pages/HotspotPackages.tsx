@@ -8,56 +8,56 @@ const HotspotPackages = () => {
   const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
   const packages = [{
     id: 'hourly-1',
-    name: '1 Hour Pass',
+    name: '1 Hour',
     price: 'Ksh 10',
     duration: '1 Hour',
     popular: false,
     features: ['1 hour unlimited access', 'Up to 7 Mbps speed', 'Connect 1 device', 'All hotspot locations', 'Basic support']
   }, {
     id: 'hourly-3',
-    name: '3 Hours Pass',
+    name: '3 Hours',
     price: 'Ksh 20',
     duration: '3 Hours',
     popular: false,
     features: ['3 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 2 devices', 'All hotspot locations', 'Basic support']
   }, {
     id: 'hourly-6',
-    name: '6 Hours Pass',
+    name: '6 Hours',
     price: 'Ksh 30',
     duration: '6 Hours',
     popular: false,
     features: ['6 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 2 devices', 'All hotspot locations', 'Basic support']
   }, {
     id: 'hourly-12',
-    name: '12 Hours Pass',
+    name: '12 Hours',
     price: 'Ksh 40',
     duration: '12 Hours',
     popular: false,
     features: ['12 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 2 devices', 'All hotspot locations', 'Priority support']
   }, {
     id: 'daily',
-    name: 'Daily Pass',
+    name: 'Daily',
     price: 'Ksh 50',
     duration: '24 Hours',
     popular: true,
     features: ['24 hours unlimited access', 'Up to 7 Mbps speed', 'Connect 3 devices', 'All hotspot locations', 'Priority support']
   }, {
     id: 'weekly',
-    name: 'Weekly Pass',
+    name: 'Weekly',
     price: 'Ksh 250',
     duration: '7 Days',
     popular: false,
     features: ['7 days unlimited access', 'Up to 7 Mbps speed', 'Connect 3 devices', 'All hotspot locations', 'Priority support', '50% savings vs daily']
   }, {
     id: 'bi-weekly',
-    name: '2 Weeks Pass',
+    name: '2 Weeks',
     price: 'Ksh 400',
     duration: '14 Days',
     popular: false,
     features: ['14 days unlimited access', 'Up to 7 Mbps speed', 'Connect 4 devices', 'All hotspot locations', 'Priority support', 'Mobile app access']
   }, {
     id: 'monthly',
-    name: 'Monthly Pass',
+    name: 'Monthly',
     price: 'Ksh 750',
     duration: '30 Days',
     popular: false,
@@ -174,22 +174,22 @@ const HotspotPackages = () => {
               <div className="w-16 h-16 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <Smartphone className="w-8 h-8 text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">1. Choose Your Plan</h3>
-              <p className="text-gray-600">Select the perfect hotspot package for your needs and purchase online or via M-Pesa.</p>
+              <h3 className="text-xl font-semibold mb-2">1. Scan and Select</h3>
+              <p className="text-gray-600">Scan to find the network named "KENTCORP HOTSPOT" select it.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <MapPin className="w-8 h-8 text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">2. Find a Hotspot</h3>
-              <p className="text-gray-600">Visit any of our 15+ hotspot locations across Kirinyaga County.</p>
+              <h3 className="text-xl font-semibold mb-2">2. Tap To Make Payment and Sign In</h3>
+              <p className="text-gray-600">Click on the desired package, enter your mobile MPESA, and enter your MPESA PIN.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <Wifi className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">3. Connect & Enjoy</h3>
-              <p className="text-gray-600">Connect to "KentCorp-Hotspot" network and enter your credentials to start browsing.</p>
+              <p className="text-gray-600">After completing your purchase, keep an eye on your inbox for a confirmation message.</p>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ const HotspotPackages = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 rounded-full px-8">
-              Buy Hotspot Pass
+              Buy Hotspot Package
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600 rounded-full px-8">
               Find Locations
