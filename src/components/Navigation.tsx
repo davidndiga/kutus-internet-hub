@@ -39,8 +39,8 @@ const Navigation = ({ scrollToSection }: NavigationProps) => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <button onClick={() => handleScrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors">Home</button>
-              <Link to="/hotspot-packages" className="text-gray-700 hover:text-blue-600 transition-colors">Hotspots</Link>
               <button onClick={() => handleScrollToSection('packages')} className="text-gray-700 hover:text-blue-600 transition-colors">Packages</button>
+              <Link to="/hotspot-packages" className="text-gray-700 hover:text-blue-600 transition-colors">Hotspots</Link>
               <button onClick={() => handleScrollToSection('features')} className="text-gray-700 hover:text-blue-600 transition-colors">Features</button>
               <button onClick={() => handleScrollToSection('team')} className="text-gray-700 hover:text-blue-600 transition-colors">Team</button>
               <button onClick={() => handleScrollToSection('testimonials')} className="text-gray-700 hover:text-blue-600 transition-colors">Testimonials</button>
@@ -72,8 +72,8 @@ const Navigation = ({ scrollToSection }: NavigationProps) => {
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <button onClick={() => handleScrollToSection('home')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</button>
-            <Link to="/hotspot-packages" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Hotspots</Link>
             <button onClick={() => handleScrollToSection('packages')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Packages</button>
+            <Link to="/hotspot-packages" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Hotspots</Link>
             <button onClick={() => handleScrollToSection('features')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Features</button>
             <button onClick={() => handleScrollToSection('team')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Team</button>
             <button onClick={() => handleScrollToSection('testimonials')} className="block px-3 py-2 text-gray-700 hover:text-blue-600">Testimonials</button>

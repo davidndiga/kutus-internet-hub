@@ -20,7 +20,7 @@ const TeamSection = () => {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-2xl font-bold text-white mb-2">KENNEDY WAHOGO</h3>
-              <p className="text-orange-400 font-semibold mb-4">C.E.O KENTCORP</p>
+              <p className="text-orange-400 font-semibold mb-4">Network Engineer KENTCORP</p>
               <p className="text-white/80 mb-6">
                 Visionary leader with over 10 years of experience in telecommunications. Kennedy founded KentCorp 
                 with the mission to bridge the digital divide in rural Kenya, bringing affordable and reliable 
