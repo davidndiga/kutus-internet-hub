@@ -32,7 +32,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-glass hover:text-orange-600 rounded-full px-8 py-3 font-semibold"
+                className="border-white text-white hover:bg-white hover:text-orange-600 rounded-full px-8 py-3 font-semibold"
                 onClick={() => scrollToSection('contact')}
               >
                 Contact Us
