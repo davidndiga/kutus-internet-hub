@@ -182,7 +182,7 @@ const HotspotPackages = () => {
                 <MapPin className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">2. Tap To Make Payment and Sign In</h3>
-              <p className="text-gray-600">Click on the desired package, enter your mobile MPESA, and enter your MPESA PIN.</p>
+              <p className="text-gray-600">Click on the desired package, enter your MPESA number, and enter your MPESA PIN when prompted.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-4">
