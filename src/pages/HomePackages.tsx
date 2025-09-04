@@ -93,7 +93,7 @@ const HomePackages = () => {
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
             Choose the perfect home internet plan for your family. Fast, reliable, and affordable 
-            internet with unlimited data and free installation.
+            internet with unlimited data and 'near-free' installation.
           </p>
           <div className="text-sm text-white/80">
             <span className="font-semibold">Installation Fee:</span> KES 3,000 (One-time payment)
