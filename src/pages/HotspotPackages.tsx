@@ -70,7 +70,7 @@ const HotspotPackages = () => {
     popular: false,
     features: ['30 days unlimited access', 'Up to 10 Mbps speed', 'Connect 3 devices', 'All hotspot locations', 'Priority support', 'Educational content priority', 'Student ID required']
   }];
-  const hotspotLocations = ['Metro Place', 'Kutus Old Market', 'Kirinyaga University Hostels', 'Kutus Main Stage', 'Dickie\'s Pub', 'Mzalendo Annex & Pub', 'Kutus Market', 'Sagana Town Center', 'Karatina University Campus', 'Kerugoya Town', 'Kianyaga Shopping Center', 'Baricho Market', 'Kimbimbi Shopping Center', 'Kagio Market', 'Kiamaciri Shopping Center'];
+  const hotspotLocations = ['Metro Place', 'Kutus Old Market', 'Kirinyaga University Hostels', 'Kutus Main Stage', 'Dickie\'s Pub', 'Mzalendo Annex & Pub', 'Kutus Market', 'Sagana Town Center', 'Kirinyaga University Campus', 'Ngomongo', 'Gitui'];
   return <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
