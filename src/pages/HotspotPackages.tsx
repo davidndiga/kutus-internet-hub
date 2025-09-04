@@ -189,7 +189,7 @@ const HotspotPackages = () => {
                 <Wifi className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">3. Connect & Enjoy</h3>
-              <p className="text-gray-600">After completing your purchase, keep an eye on your inbox for a confirmation message.</p>
+              <p className="text-gray-600">After completing your purchase, keep an eye on your inbox for a CONFIRMATION MESSEGE.</p>
             </div>
           </div>
         </div>
